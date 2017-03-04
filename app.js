@@ -39,7 +39,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // INTEGRACION DE LAS RUTAS EN LA APLICACION
 // ejecuta el codigo de JS cuando es llamado desde una URL por el cliente
-app.use('/', index);
+app.use('/', emisora);
 app.use('/hola', users);
 app.use('/gatos', gatos);
 app.use('/emisora', emisora);
