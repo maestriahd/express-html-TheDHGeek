@@ -3,12 +3,11 @@ var router = express.Router();
 
 
 router.get('/', function(req, res) {
-  res.render('emisora',
+  res.render('programas',
     {
-      title: 'Proyecto Séneca',
-      texto: 'Emisora de la comunidad uniandina - La hacemos todos',
+      title: 'Programas',
+      texto: 'Éstos son los programas de ésta temporada',
       logo: 'http://www.proyectoseneca.com/wp-content/uploads/2017/01/cropped-Logo-01.png'
-      resumen: ''
   }
   );
 });

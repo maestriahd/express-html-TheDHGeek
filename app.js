@@ -11,9 +11,10 @@ var bodyParser = require('body-parser');
 // cuando un cliente hace una petición. Los archivos están guardados
 // en el directorio `routes`
 var index = require('./routes/index');
-var users = require('./routes/users');
-var gatos = require('./routes/gato');
+//var users = require('./routes/users');
+//var gatos = require('./routes/gato');
 var emisora = require('./routes/emisora');
+var programas = require('./routes/programas');
 // **** PARA AGREGAR UNA NUEVA RUTA  ****
 // descomente y cambie los valores de la siguiente línea
 //var NOMBRE_RUTA = require('./routes/ARCHIVO_RUTA');
@@ -40,9 +41,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 // INTEGRACION DE LAS RUTAS EN LA APLICACION
 // ejecuta el codigo de JS cuando es llamado desde una URL por el cliente
 app.use('/', emisora);
-app.use('/hola', users);
-app.use('/gatos', gatos);
+//app.use('/hola', users);
+//app.use('/gatos', gatos);
 app.use('/emisora', emisora);
+app.use('/programas', programas);
 // **** PARA AGREGAR UNA NUEVA RUTA  ****
 // descomente y cambie los valores de la siguiente línea
 // app.use('/DONDE?', NOMBRE_RUTA);
