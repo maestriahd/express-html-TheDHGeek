@@ -8,7 +8,7 @@ router.get('/', function(req, res) {
       title: 'Proyecto Séneca',
       texto: 'Emisora de la comunidad uniandina - La hacemos todos',
       logo: 'http://www.proyectoseneca.com/wp-content/uploads/2017/01/cropped-Logo-01.png'
-      resumen: ''
+  
   }
   );
 });
