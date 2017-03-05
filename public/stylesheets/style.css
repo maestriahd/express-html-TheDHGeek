@@ -1,5 +1,6 @@
 body {
   padding: 50px;
+  text-align: center;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -8,5 +9,7 @@ a {
 }
 
 ul li{
-  display: inline;
+  padding: 10px;
+  text-align: center;
+  display: inline ;
 }
